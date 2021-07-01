@@ -9,6 +9,8 @@ La extensión de archivo para archivos YAML es .yaml o .yml. Para manipular arch
 instalar la librería pyyaml.
 
 pip install pyyaml.
+
+
 ![imagen](https://user-images.githubusercontent.com/84480810/124067361-e6fa8e00-d9ff-11eb-974a-1a592ef7648d.png)
 
 
