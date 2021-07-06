@@ -30,21 +30,28 @@
                             {% endfor %}
                             <!-- <td><a href="/eliminar/{{fila.get('item_id')}}"><button class="btn btn-danger">Eliminar</button></a></td> -->
                             <td><a href="/eliminar/{{lista.index(fila)}}"><button class="btn btn-danger">Eliminar</button></a></td>
+                            <td><a href="/modificar/{{lista.index(fila)}}"><button class="btn btn-danger">Modificar</button></a></td>
                         </tr>
                     {% endfor %}
                     <tr scope="row">
-                        <form method="POST" action="/agregar">
-                        <td> </td>
-                        <td><input type="number" name="f_matricula" class="form-control" required></td>
-                        <td><input type="text" name="f_nombre" class="form-control" required></td>
-                        <td><input type="number" name="f_edad" class="form-control" required></td>
-                        <td><input type="text" name="f_APaterno" class="form-control" required></td>
-                        <td><input type="text" name="f_AMaterno" class="form-control" required></td>
-                        <td><input type="text" name="f_correo" class="form-control" required></td>
-                        <td><input type="number" name="f_telefono" class="form-control" required></td>
-                        <td><input type="text" name="f_carrera" class="form-control" required></td>
+                        <form method="POST" action="{{'/actualizar' if alumno else '/agregar'}}">
+                        <td> 
+                            {% if alumno %}
+                            {{alumno['item_id']}}
+                            <input type="hidden" name="item_id" class="form-control" required value="{{alumno['item_id']}}">
+                            <input type="hidden" name="item_index" class="form-control" required value="{{lista.index(alumno)}}">
+                            {% endif %}
+                        </td>
+                        <td><input type="number" name="f_matricula" class="form-control" required value="{{alumno['matricula']}}"></td>
+                        <td><input type="text" name="f_nombre" class="form-control" required value="{{alumno['nombre']}}"></td>
+                        <td><input type="number" name="f_edad" class="form-control" required value="{{alumno['edad']}}"></td>
+                        <td><input type="text" name="f_APaterno" class="form-control" required value="{{alumno['APaterno']}}"></td>
+                        <td><input type="text" name="f_AMaterno" class="form-control" required value="{{alumno['AMaterno']}}"></td>
+                        <td><input type="text" name="f_correo" class="form-control" required value="{{alumno['correo']}}"></td>
+                        <td><input type="number" name="f_telefono" class="form-control" required value="{{alumno['telefono']}}"></td>
+                        <td><input type="text" name="f_carrera" class="form-control" required value="{{alumno['carrera']}}"></td>
 
-                        <td style="text-align: center;"><button class="btn btn-primary" type="submit">Agregar</button></td>
+                        <td style="text-align: center;"><button class="btn btn-primary" type="submit">{{'Actualizar' if alumno else 'Agregar'}}</button></td>
                         </form>
                     </tr>
                 </tbody>
