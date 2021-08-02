@@ -1,32 +1,5 @@
 alumnos:
 - item_id: 1
-  matricula: 918765432
-  nombre: Juan
-  edad: 33
-  APaterno: "P\xE9rez"
-  AMaterno: Morales
-  correo: juan@gmail.com
-  telefono: 9631682045
-  carrera: IRyC
-- item_id: 2
-  matricula: 12345678
-  nombre: wilber
-  edad: 24
-  APaterno: Juarez
-  AMaterno: Ramirez
-  correo: wilber@gmail.com
-  telefono: 9631682135
-  carrera: IRyC
-- item_id: 3
-  matricula: 12345677
-  nombre: Miguel
-  edad: 33
-  APaterno: Sanchez
-  AMaterno: Mendez
-  correo: miguel@gmail.com
-  telefono: 9631681054
-  carrera: IRyC
-- item_id: 4
   matricula: 91810119
   nombre: Gerardo
   edad: 22
@@ -34,4 +7,40 @@ alumnos:
   AMaterno: "P\xE9rez"
   correo: gera_perez@gmail.com
   telefono: 9631682266
+  carrera: IRyC
+- item_id: 2
+  matricula: 91810828
+  nombre: Diana
+  edad: 21
+  APaterno: 'Rodriguez '
+  AMaterno: Aguilar
+  correo: dianaaaguilarjunio@gmail.com
+  telefono: 9191222400
+  carrera: IRyC
+- item_id: 3
+  matricula: 91810829
+  nombre: Alejandra
+  edad: 20
+  APaterno: Santos
+  AMaterno: Mendez
+  correo: alejdrasantos@gmail.com
+  telefono: 9192346755
+  carrera: IRyC
+- item_id: 4
+  matricula: 91910824
+  nombre: Angel
+  edad: 21
+  APaterno: "L\xF3pez"
+  AMaterno: "L\xF3pez"
+  correo: angelopez@gmail.com
+  telefono: 9191614556
+  carrera: IRyC
+- item_id: 5
+  matricula: 91910828
+  nombre: Gabriela
+  edad: 24
+  APaterno: 'Gomez '
+  AMaterno: Gomez
+  correo: gabrielagomezgomez@gmail.com
+  telefono: 91915262623
   carrera: IRyC
